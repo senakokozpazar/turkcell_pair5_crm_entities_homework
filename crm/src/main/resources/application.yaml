@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-starter
+  datasource:
+    url: "jdbc:postgresql://localhost:5433/postgres"
+    username: postgres
+    password: ${MY_DB_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    showSql: true
+    hibernate:
+      ddlAuto: validate
+server:
+  port: 8080
